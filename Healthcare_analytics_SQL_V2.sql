@@ -290,7 +290,7 @@ WHERE TRY_CONVERT(DATE, Patient_Admission_Date, 103) IS NOT NULL
         ELSE Patient_Waittime
     END AS Simulated_Waittime
 
-INTO [Healthcare_Ops].[dbo].[healthcare_analytics_dashboard]
+INTO [Healthcare_Ops].[dbo].[healthcare_analytics_dash]
 FROM [Healthcare_Ops].[dbo].[healthcare_analytics]
 WHERE TRY_CONVERT(DATE, Patient_Admission_Date, 103) IS NOT NULL
   AND TRY_CONVERT(TIME, Patient_Admission_Time, 109) IS NOT NULL;
